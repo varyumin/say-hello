@@ -16,8 +16,8 @@ service:
 ingress:
   enabled: true
   annotations:
-     kubernetes.io/ingress.class: nginx
-     kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
   path: /
   hosts:
     - say-hello.dev2.k8s.tcsbank.ru
@@ -27,10 +27,10 @@ ingress:
         - say-hello.dev2.k8s.tcsbank.ru
 
 resources:
-   limits:
+  limits:
     cpu: 100m
     memory: 128Mi
-   requests:
+  requests:
     cpu: 100m
     memory: 128Mi
 
