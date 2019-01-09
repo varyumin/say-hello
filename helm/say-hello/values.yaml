@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: registry.tcsbank.ru:5050/k8s/say-hello
+  repository: varyumin/say-hello
   tag: v0.0.1
   pullPolicy: IfNotPresent
 
@@ -14,17 +14,17 @@ service:
   port: 80
 
 ingress:
-  enabled: true
+  enabled: false
   annotations:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - say-hello.dev2.k8s.tcsbank.ru
+    - say-hello.cluster.local
   tls:
     - secretName: say-hello-tls
       hosts:
-        - say-hello.dev2.k8s.tcsbank.ru
+        - say-hello.cluster.local
 
 resources:
   limits:
