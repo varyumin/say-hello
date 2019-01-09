@@ -1,2 +1,2 @@
 # say-hello
-![](https://monosnap.com/file/A0WdB4eJMDr5MYzS4uUfdlcxz3FFuA)
+![](https://api.monosnap.com/rpc/file/download?id=A0WdB4eJMDr5MYzS4uUfdlcxz3FFuA)
